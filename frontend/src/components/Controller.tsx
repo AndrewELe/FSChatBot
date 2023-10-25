@@ -57,6 +57,47 @@ function Controller() {
         <div className="h-screen overflow-y-hidden">
             <Title setMessages={setMessages}/>
             <div className="flex flex-col justify-between h-fill overflow-y-scroll pb-96">
+                {/* conversation on display */}
+                <div className="mt-5 px-5">
+                    {messages.map((audio, index) => {
+                        // creates a unique key for the div (sender == bot on line 41)
+                        return (
+                                <div 
+                                    key={index + audio.sender} 
+                                    className={
+                                        "flex flex-col " + 
+                                        (audio.sender == "bot" && "flex items-end")
+                                    }
+                                    >
+                                    {/* Sender  */}
+                                    <div className="mt-4">
+                                        {/* uses inline JS to check who the sender is of the audio and changes position and color depending on sender*/}
+                                        <p className={audio.sender == "bot" 
+                                            ? "text-right mr-2 italic text-green-500" 
+                                            : "ml-2 italic text-blue-500"}
+                                        >
+                                            {audio.sender}
+                                        </p>
+                                        {/* audio message */}
+                                        <audio 
+                                            src={audio.blobUrl} 
+                                            className="appearance-none" 
+                                            controls
+                                        />
+                                    </div>
+                                </div>
+                        )
+                    })}
+
+                    {messages.length == 0 && !isLoading && (
+                        <div className="text-center font-light italic mt-10">Talk to me</div>
+                    )}
+
+                    {isLoading && (
+                        <div className="text-center font-light italic mt-10 animate-pulse">Thinking of a response...</div>
+                    )}
+                    
+                </div>
                 {/* recorder */}
                 <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-sky-500 to-green-500">
                     <div className="flex justify-center items-center w-full">
