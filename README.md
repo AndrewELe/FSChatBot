@@ -35,7 +35,9 @@ You will need an API key for both elevenlabs and openAI API. These can be found 
 
 to begin with 
 
-``` git clone git@github.com:AndrewELe/FSChatBot.git ```
+```
+git clone git@github.com:AndrewELe/FSChatBot.git 
+```
 
 
 
