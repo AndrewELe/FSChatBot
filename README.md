@@ -26,7 +26,7 @@ This project was designed to be a voice responsive conversational chatbot. This 
 * pip
 * Python
 * API keys for the following :
-*       ElevenLabs, OpenAI API
+* ElevenLabs, OpenAI API
 
 You will need an API key for both elevenlabs and openAI API. These can be found at the following websites 
 
