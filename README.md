@@ -14,29 +14,37 @@
 * React
 * Vite
 * Tailwind
+* ElevenLabs
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This project was designed to be a voice responsive conversational chatbot. This is V 1.0 of this project and it is an implimentation to get the chatbot to function.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Yarn
+* pip
+* Python
+* API keys for the following :
+*       ElevenLabs, OpenAI API
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+You will need an API key for both elevenlabs and openAI API. These can be found at the following websites 
+
+* <a href="https://elevenlabs.io/">ElevenLabs</a>
+* <a href="https://platform.openai.com/">OpenAI API</a>
+
+
+to begin with 
+'''git clone git@github.com:AndrewELe/FSChatBot.git'''
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* speech to text and text to speech implimented in this project only has capabilities to work on the google Chrome browser. It may not function properly in other browsers.
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+"In this city, we've got a saying: once is coincidence, twice is a booking offense!" -Judge Dredd
 
 ## Contact Information
 
