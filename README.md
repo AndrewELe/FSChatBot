@@ -25,8 +25,7 @@ This project was designed to be a voice responsive conversational chatbot. This 
 * Yarn
 * pip
 * Python
-* API keys for the following :
-* ElevenLabs, OpenAI API
+* API keys for the following : ElevenLabs, OpenAI API
 
 You will need an API key for both elevenlabs and openAI API. These can be found at the following websites 
 
@@ -35,7 +34,7 @@ You will need an API key for both elevenlabs and openAI API. These can be found 
 
 
 to begin with 
-'''git clone git@github.com:AndrewELe/FSChatBot.git'''
+''' git clone git@github.com:AndrewELe/FSChatBot.git '''
 
 
 ## Known Bugs
