@@ -130,11 +130,12 @@ http://localhost:4173
 
 ## Known Bugs
 
-* speech to text and text to speech implimented in this project only has capabilities to work on the google Chrome browser. It may not function properly in other browsers.
+* speech to text and text to speech implemented in this project only has capabilities to work on the google Chrome browser. It may not function properly in other browsers.
 
 ## License
 
 "In this city, we've got a saying: once is coincidence, twice is a booking offense!" -Judge Dredd
+
 seriously though, i encourage you to reach out or branch this project. please feel free to contact me !
 
 ## Contact Information
