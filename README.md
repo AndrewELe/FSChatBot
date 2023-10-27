@@ -108,7 +108,7 @@ ensure that your backend virtual server is running
 uvicorn main:app --reload
 ```
 
-using a seperate terminal
+using a separate terminal
 
 ```
 yarn build
@@ -136,7 +136,8 @@ http://localhost:4173
 
 "In this city, we've got a saying: once is coincidence, twice is a booking offense!" -Judge Dredd
 
-seriously though, i encourage you to reach out or branch this project. please feel free to contact me !
+seriously though,
+I encourage you to reach out or branch this project. please feel free to contact me !
 
 ## Contact Information
 
