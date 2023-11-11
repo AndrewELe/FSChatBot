@@ -3,6 +3,8 @@ import Title from "./Title"
 import RecordMessage from "./RecordMessage"
 import axios from "axios"
 
+
+
 function Controller() {
     const [isLoading, setIsLoading] = useState(false)
     const [messages, setMessages] = useState<any[]>([])
@@ -36,7 +38,9 @@ function Controller() {
                 }).then((res: any) => {
                     const blob = res.data
                     const audio = new Audio()
+
                     audio.src = createBlobUrl(blob)
+                    
                     //append to audio
                     const botMessage = {sender: "bot", blobUrl: audio.src}
                     messagesArr.push(botMessage)
@@ -73,7 +77,7 @@ function Controller() {
                                     <div className="mt-4">
                                         {/* uses inline JS to check who the sender is of the audio and changes position and color depending on sender*/}
                                         <p className={audio.sender == "bot" 
-                                            ? "text-right mr-2 italic text-green-500" 
+                                            ? "text-right mr-2 italic text-green-500"
                                             : "ml-2 italic text-blue-500"}
                                         >
                                             {audio.sender}
@@ -85,12 +89,25 @@ function Controller() {
                                             controls
                                         />
                                     </div>
+                                    <div>
+                                        {/* audio as text for user to see what is being said */}
+                                        <p className={audio.sender == "bot" 
+                                            ? "text-right mr-2 italic text-green-500"
+                                            : "ml-2 italic text-blue-500"}
+                                        >
+                                            {audio.sender}
+                                        </p>
+                                    </div>
                                 </div>
                         )
                     })}
 
                     {messages.length == 0 && !isLoading && (
-                        <div className="text-center font-light italic mt-10">Talk to me</div>
+                        <div className="text-center">
+                            <div className="text-center font-light italic mt-10">Language Translator</div>
+                            <div className="text-center font-light italic mt-10">indicate the languge translate</div>
+                            <div className="text-center font-light italic mt-10">top right icon to reset</div>
+                        </div>
                     )}
 
                     {isLoading && (

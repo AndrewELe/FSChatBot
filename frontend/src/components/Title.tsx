@@ -29,8 +29,11 @@ export default function Title({ setMessages }: Props) {
             <div className="italic">
                 Talk to me
             </div>
-            <button onClick={resetConversation} className={"transition-all duration-300 text-blue-300 hover:text-pink-500 " + 
-            (isResetting && "animate-pulse") }>
+            <button 
+                onClick={resetConversation} 
+                className={"transition-all duration-300 text-blue-300 hover:text-pink-500 " + 
+                (isResetting && "animate-pulse") }
+            >
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
@@ -46,6 +49,7 @@ export default function Title({ setMessages }: Props) {
                 />
                 </svg>
             </button>
+
         </div>
     )
 }

@@ -10,21 +10,24 @@ def get_recent_messages():
     file_name = "stored_data.json"
     learn_instruction = {
         "role" : "system",
-        "content" : "Your are interviewing the user for a job as a junior fullstack developer. Ask short questions that are relevent to the junior position. Your name is Michelle. The user is named Andrew. Keep your answers under 30 words."
+        "content": "You are a friendly language translator. You must ask the user what langauge that they need english translated to. Repeat the sentence that is given from the user into the language that they have chosen as accurately as possible.",
+        # "content" : "Your are interviewing the user for a job as a junior fullstack developer. Ask short questions that are relevent to the junior position. Your name is Michelle. The user is named Andrew. Keep your answers under 30 words."
     }
 
     # initialize messages
     messages = []
 
-    # add a random element, this makes the prompt engineering more interesting
-    x = random.uniform(0, 1)
-    if x < 0.5:
-        learn_instruction["content"] = learn_instruction["content"] + " Your response will include some dry humour. The user is a recent graduate from a coding bootcamp."
-    else:
-        learn_instruction["content"] = learn_instruction["content"] + " Your response will include a challenging javascript coding question."
+    # # add a random element, this makes the prompt engineering more interesting
+    # x = random.uniform(0, 1)
+    # if x < 0.5:
+    #     learn_instruction["content"] = learn_instruction["content"] + " Your response will include a response with empathy and human kindness."
+    #     # learn_instruction["content"] = learn_instruction["content"] + " Your response will include some dry humour. The user is a recent graduate from a coding bootcamp."
+    # else:
+    #     learn_instruction["content"] = learn_instruction["content"] + " Your response will include a gentle question if they would like to continue."
+    #     # learn_instruction["content"] = learn_instruction["content"] + " Your response will include a challenging javascript coding question."
 
-    # append instruction to message
-    messages.append(learn_instruction)
+    # # append instruction to message
+    # messages.append(learn_instruction)
 
 #get last messages
 # this catches the information from the stroed_data.json file and adds the previous conversational data.
