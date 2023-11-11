@@ -3,6 +3,7 @@
     # uvicorn main:app --reload
     # uvicorn main:app
 
+
 # main imports
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import StreamingResponse
@@ -38,6 +39,8 @@ app.add_middleware(
 )
 
 # this is the endpoints in python coding 
+
+
 @app.get("/health")
 async def check_health():
     return {"message": "Healthy"} 
