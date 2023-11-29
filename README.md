@@ -82,7 +82,7 @@ pip3 install --upgrade pip
 installing packages 
 
 ```
-pip3 install opeai python-decouple fastapi "uvicorn[standard]" python-multipart
+pip3 install openai python-decouple fastapi "uvicorn[standard]" python-multipart
 ```
 
 #### create your .env file
