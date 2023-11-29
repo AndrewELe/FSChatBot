@@ -62,7 +62,7 @@ cd **/FSChatBot/backend
 create virtual environment
 
 ```
-python 3 -m venv venv
+python3 -m venv venv
 ```
 
 activate virtual environment (mac)
