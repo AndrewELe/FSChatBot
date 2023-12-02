@@ -10,18 +10,18 @@ def get_recent_messages():
     file_name = "stored_data.json"
     learn_instruction = {
         "role" : "system",
-        "content" : "Your are interviewing the user for a job as a junior fullstack developer. Ask short questions that are relevent to the junior position. Your name is Michelle. The user is named Andrew. Keep your answers under 30 words."
+        "content" : "you are a language friendly language translator. your goal is to accurately translate the spoken english into the language of the user's request."
     }
 
     # initialize messages
     messages = []
 
     # add a random element, this makes the prompt engineering more interesting
-    x = random.uniform(0, 1)
-    if x < 0.5:
-        learn_instruction["content"] = learn_instruction["content"] + " Your response will include some dry humour. The user is a recent graduate from a coding bootcamp."
-    else:
-        learn_instruction["content"] = learn_instruction["content"] + " Your response will include a challenging javascript coding question."
+    # x = random.uniform(0, 1)
+    # if x < 0.5:
+    #     learn_instruction["content"] = learn_instruction["content"] + " Your response will include some dry humour. The user is a recent graduate from a coding bootcamp."
+    # else:
+    #     learn_instruction["content"] = learn_instruction["content"] + " Your response will include a challenging javascript coding question."
 
     # append instruction to message
     messages.append(learn_instruction)
